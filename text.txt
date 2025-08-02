@@ -1,0 +1,1 @@
+className="gap-10 shadow-md rounded-lg flex flex-col  justify-center items-center h-[600px] w-1/4"

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 14 Pro",
+    "price": "$999",
+    "category": "smartphone",
+    "image": "https://i.postimg.cc/Fsqqc0pS/all-screen-smartphone-with-icon-set-isolated-white-3d-render-118047-2162-jpg-1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S23",
+    "price": "$849",
+    "category": "smartphone",
+    "image": "https://i.postimg.cc/FRsGwKGm/phone-screen-with-abstract-marble-aesthetic-53876-145553-jpg-1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "MacBook Pro 14\"",
+    "price": "$1999",
+    "category": "laptop",
+    "image": "https://i.postimg.cc/hGqd5Pcj/market-trends-concept-with-laptop-23-2150372404-jpg-1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Dell XPS 13",
+    "price": "$1299",
+    "category": "laptop",
+    "image": "https://i.postimg.cc/XJjynHZ6/laptop-with-solar-system-screen-1308-51945-jpg-1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "DJI Mini 3 Pro",
+    "price": "$759",
+    "category": "drone",
+    "image": "https://i.postimg.cc/0y76DRDq/quadcopter-flying-nature-231208-10459-jpg-1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Autel EVO Nano+",
+    "price": "$799",
+    "category": "drone",
+    "image": "https://i.postimg.cc/TPGKc7J5/drone-flying-green-field-93200-2639-jpg-1.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Sony WH-1000XM5",
+    "price": "$399",
+    "category": "audio",
+    "image": "https://i.postimg.cc/NMjL3KVg/black-white-drawing-two-headphones-with-white-background-971593-3640-jpg.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Apple AirPods Pro",
+    "price": "$249",
+    "category": "audio",
+    "image": "https://i.postimg.cc/hvJvGHc6/headphone-gadget-cartoon-isolated-1308-153440-jpg.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Apple Watch Series 9",
+    "price": "$399",
+    "category": "wearable",
+    "image": "https://i.postimg.cc/BnfbqYy7/smartwatch-showing-time-footsteps-694196-1135-jpg-1.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Samsung Galaxy Watch 6",
+    "price": "$329",
+    "category": "wearable",
+    "image": "https://i.postimg.cc/sft7hJq7/new-smart-fitness-bracelet-with-blank-black-screen-298425-724-jpg-1.jpg"
+  }
+]
