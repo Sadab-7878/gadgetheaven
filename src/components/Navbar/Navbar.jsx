@@ -62,9 +62,9 @@ const Navbar = () => {
 
         {/* Cart */}
         <div className="flex gap-5">
-          <div className="w-[60px] h-[60px] flex flex-col items-center justify-center rounded-full bg-white hover:bg-transparent cursor-pointer hover:border-2 hover:border-white">
+          <Link to={"/cart"} className="w-[60px] h-[60px] flex flex-col items-center justify-center rounded-full bg-white hover:bg-transparent cursor-pointer hover:border-2 hover:border-white">
             <MdOutlineShoppingCart className="text-[30px]" />
-          </div>
+          </Link>
           <div className="w-[60px] h-[60px] flex flex-col items-center justify-center rounded-full bg-white hover:bg-transparent cursor-pointer hover:border-2 hover:border-white">
             <IoIosHeartEmpty className="text-[30px]" />
           </div>

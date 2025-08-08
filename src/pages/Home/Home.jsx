@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import banner from "../../assets/banner.jpg";
 import productsdata from "../products.json";
+import Footer from "../../components/Footer/Footer";
+import { Link } from "react-router";
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState("all");
@@ -85,24 +87,17 @@ const Home = () => {
                   Price: {product.price}
                 </div>
 
-                <div className="mt-auto">
-
-               
-
-                <button className="border border-[#9538E2] w-[170px] h-[50px] rounded-lg text-[#9538E2] font-[600] text-[18px] sora-text hover:bg-[#F6F6F6] hover:border-none cursor-pointer">
-                  View Details
-                </button>
-
-                 </div>
+                <Link to={`/product/${product.id}`} className="mt-auto">
+                  <button className="border border-[#9538E2] w-[170px] h-[50px] rounded-lg text-[#9538E2] font-[600] text-[18px] sora-text hover:bg-[#F6F6F6] hover:border-none cursor-pointer">
+                    View Details
+                  </button>
+                </Link>
               </div>
             ))}
           </div>
-
-          
         </div>
 
-
-        
+        <Footer />
       </div>
     </>
   );

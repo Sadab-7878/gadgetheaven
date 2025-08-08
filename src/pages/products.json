@@ -4,69 +4,169 @@
     "name": "iPhone 14 Pro",
     "price": "$999",
     "category": "smartphone",
-    "image": "https://i.postimg.cc/Fsqqc0pS/all-screen-smartphone-with-icon-set-isolated-white-3d-render-118047-2162-jpg-1.jpg"
+    "image": "https://i.postimg.cc/Fsqqc0pS/all-screen-smartphone-with-icon-set-isolated-white-3d-render-118047-2162-jpg-1.jpg",
+    "stock": "In Stock",
+    "description": "Powerful smartphone with dynamic island and pro camera system.",
+    "specifications": [
+      "1. A16 Bionic chip for lightning-fast performance",
+      "2. 6.1-inch Super Retina XDR display",
+      "3. 48MP triple-lens rear camera",
+      "4. Face ID and Ceramic Shield front",
+      "5. iOS 17 pre-installed"
+    ],
+    "rating": 4.8
   },
   {
     "id": 2,
     "name": "Samsung Galaxy S23",
     "price": "$849",
     "category": "smartphone",
-    "image": "https://i.postimg.cc/FRsGwKGm/phone-screen-with-abstract-marble-aesthetic-53876-145553-jpg-1.jpg"
+    "image": "https://i.postimg.cc/FRsGwKGm/phone-screen-with-abstract-marble-aesthetic-53876-145553-jpg-1.jpg",
+    "stock": "In Stock",
+    "description": "Premium smartphone with nightography camera and adaptive display.",
+    "specifications": [
+      "1. Snapdragon 8 Gen 2 processor",
+      "2. 6.1-inch AMOLED 120Hz screen",
+      "3. 50MP AI-enhanced triple camera",
+      "4. 3900mAh battery with fast charge",
+      "5. IP68 water resistance"
+    ],
+    "rating": 4.5
   },
   {
     "id": 3,
     "name": "MacBook Pro 14\"",
     "price": "$1999",
     "category": "laptop",
-    "image": "https://i.postimg.cc/hGqd5Pcj/market-trends-concept-with-laptop-23-2150372404-jpg-1.jpg"
+    "image": "https://i.postimg.cc/hGqd5Pcj/market-trends-concept-with-laptop-23-2150372404-jpg-1.jpg",
+    "stock": "Out of Stock",
+    "description": "Powerhouse laptop with stunning Liquid Retina XDR display.",
+    "specifications": [
+      "1. Apple M2 Pro chip with 10-core CPU",
+      "2. 14.2-inch Liquid Retina XDR display",
+      "3. 16GB unified memory and 512GB SSD",
+      "4. 18-hour battery life",
+      "5. Backlit Magic Keyboard with Touch ID"
+    ],
+    "rating": 5
   },
   {
     "id": 4,
     "name": "Dell XPS 13",
     "price": "$1299",
     "category": "laptop",
-    "image": "https://i.postimg.cc/XJjynHZ6/laptop-with-solar-system-screen-1308-51945-jpg-1.jpg"
+    "image": "https://i.postimg.cc/XJjynHZ6/laptop-with-solar-system-screen-1308-51945-jpg-1.jpg",
+    "stock": "In Stock",
+    "description": "Ultra-slim, high-performance laptop with 13.4-inch InfinityEdge display.",
+    "specifications": [
+      "1. Intel Core i7 13th Gen processor",
+      "2. 13.4-inch 4K+ touchscreen display",
+      "3. 16GB RAM and 1TB SSD",
+      "4. Thunderbolt 4 ports and Wi-Fi 6",
+      "5. Carbon fiber palm rest"
+    ],
+    "rating": 4.7
   },
   {
     "id": 5,
     "name": "DJI Mini 3 Pro",
     "price": "$759",
     "category": "drone",
-    "image": "https://i.postimg.cc/0y76DRDq/quadcopter-flying-nature-231208-10459-jpg-1.jpg"
+    "image": "https://i.postimg.cc/0y76DRDq/quadcopter-flying-nature-231208-10459-jpg-1.jpg",
+    "stock": "In Stock",
+    "description": "Compact drone with 4K HDR video and obstacle avoidance.",
+    "specifications": [
+      "1. 4K 60fps camera with 1/1.3-inch sensor",
+      "2. Tri-directional obstacle sensing",
+      "3. 34-minute max flight time",
+      "4. Foldable and lightweight design",
+      "5. Smart Return-to-Home mode"
+    ],
+    "rating": 4.3
   },
   {
     "id": 6,
     "name": "Autel EVO Nano+",
     "price": "$799",
     "category": "drone",
-    "image": "https://i.postimg.cc/TPGKc7J5/drone-flying-green-field-93200-2639-jpg-1.jpg"
+    "image": "https://i.postimg.cc/TPGKc7J5/drone-flying-green-field-93200-2639-jpg-1.jpg",
+    "stock": "Out of Stock",
+    "description": "Portable drone with RYYB color filter and PDAF autofocus.",
+    "specifications": [
+      "1. 50MP camera with large aperture lens",
+      "2. 3-axis gimbal for stable footage",
+      "3. 28-minute flight time",
+      "4. Dual-band Wi-Fi transmission",
+      "5. Multiple intelligent flight modes"
+    ],
+    "rating": 4.1
   },
   {
     "id": 7,
     "name": "Sony WH-1000XM5",
     "price": "$399",
     "category": "audio",
-    "image": "https://i.postimg.cc/NMjL3KVg/black-white-drawing-two-headphones-with-white-background-971593-3640-jpg.jpg"
+    "image": "https://i.postimg.cc/NMjL3KVg/black-white-drawing-two-headphones-with-white-background-971593-3640-jpg.jpg",
+    "stock": "In Stock",
+    "description": "Noise-canceling wireless headphones with immersive sound.",
+    "specifications": [
+      "1. Industry-leading noise cancellation",
+      "2. Up to 30 hours of battery life",
+      "3. Touch controls and voice assistant support",
+      "4. Lightweight and foldable design",
+      "5. Hi-Res Audio certified"
+    ],
+    "rating": 4.9
   },
   {
     "id": 8,
     "name": "Apple AirPods Pro",
     "price": "$249",
     "category": "audio",
-    "image": "https://i.postimg.cc/hvJvGHc6/headphone-gadget-cartoon-isolated-1308-153440-jpg.jpg"
+    "image": "https://i.postimg.cc/hvJvGHc6/headphone-gadget-cartoon-isolated-1308-153440-jpg.jpg",
+    "stock": "In Stock",
+    "description": "In-ear earbuds with Active Noise Cancellation and Adaptive EQ.",
+    "specifications": [
+      "1. H2 chip for improved audio performance",
+      "2. Up to 6 hours of listening time",
+      "3. MagSafe charging case included",
+      "4. Transparency and Conversation Awareness modes",
+      "5. Sweat and water resistant"
+    ],
+    "rating": 4.6
   },
   {
     "id": 9,
     "name": "Apple Watch Series 9",
     "price": "$399",
     "category": "wearable",
-    "image": "https://i.postimg.cc/BnfbqYy7/smartwatch-showing-time-footsteps-694196-1135-jpg-1.jpg"
+    "image": "https://i.postimg.cc/BnfbqYy7/smartwatch-showing-time-footsteps-694196-1135-jpg-1.jpg",
+    "stock": "In Stock",
+    "description": "Smartwatch with advanced health tracking and double tap gesture.",
+    "specifications": [
+      "1. S9 chip with on-device Siri",
+      "2. Always-On Retina display",
+      "3. Blood oxygen and ECG apps",
+      "4. Crash detection and emergency SOS",
+      "5. Carbon neutral case and bands"
+    ],
+    "rating": 4.4
   },
   {
     "id": 10,
     "name": "Samsung Galaxy Watch 6",
     "price": "$329",
     "category": "wearable",
-    "image": "https://i.postimg.cc/sft7hJq7/new-smart-fitness-bracelet-with-blank-black-screen-298425-724-jpg-1.jpg"
+    "image": "https://i.postimg.cc/sft7hJq7/new-smart-fitness-bracelet-with-blank-black-screen-298425-724-jpg-1.jpg",
+    "stock": "Out of Stock",
+    "description": "Modern smartwatch with body composition and sleep coaching.",
+    "specifications": [
+      "1. 1.5-inch Super AMOLED display",
+      "2. BioActive sensor for health metrics",
+      "3. Slimmer rotating bezel design",
+      "4. Wear OS with Google apps",
+      "5. Fast wireless charging"
+    ],
+    "rating": 4.0
   }
 ]
