@@ -1,0 +1,18 @@
+<!-- Save as gadget-heaven-icon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Gadget Heaven icon">
+  <defs>
+    <linearGradient id="gi" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#00C2FF"></stop>
+      <stop offset="1" stop-color="#6C5CE7"></stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="200" height="200" rx="30" fill="url(#gi)"></rect>
+  <!-- white bag with phone silhouette -->
+  <g transform="translate(40,30)">
+    <rect x="0" y="20" width="120" height="100" rx="12" fill="#ffffff"></rect>
+    <path d="M24 16 C24 6, 96 6, 96 16" stroke="#6C5CE7" stroke-width="5" stroke-linecap="round" fill="none"></path>
+    <rect x="44" y="38" width="36" height="56" rx="5" fill="#6C5CE7"></rect>
+    <circle cx="62" cy="98" r="3" fill="#ffffff"></circle>
+  </g>
+</svg>
