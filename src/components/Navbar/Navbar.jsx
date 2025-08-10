@@ -12,6 +12,10 @@ const Navbar = () => {
 
   const activeTextColorClass = isHomePage ? "text-white" : "text-black";
 
+  const isborderclass = isHomePage
+    ? "hover:border-2 hover:border-white"
+    : "border-2 border-black";
+
   return (
     <>
       <div className="flex justify-evenly items-center mt-10 ">
@@ -62,10 +66,15 @@ const Navbar = () => {
 
         {/* Cart */}
         <div className="flex gap-5">
-          <Link to={"/cart"} className="w-[60px] h-[60px] flex flex-col items-center justify-center rounded-full bg-white hover:bg-transparent cursor-pointer hover:border-2 hover:border-white">
+          <Link
+            to={"/cart"}
+            className={`w-[60px] h-[60px] flex flex-col items-center justify-center rounded-full bg-white hover:bg-transparent cursor-pointer  ${isborderclass}`}
+          >
             <MdOutlineShoppingCart className="text-[30px]" />
           </Link>
-          <div className="w-[60px] h-[60px] flex flex-col items-center justify-center rounded-full bg-white hover:bg-transparent cursor-pointer hover:border-2 hover:border-white">
+          <div
+            className={`w-[60px] h-[60px] flex flex-col items-center justify-center rounded-full bg-white hover:bg-transparent cursor-pointer  ${isborderclass}`}
+          >
             <IoIosHeartEmpty className="text-[30px]" />
           </div>
         </div>

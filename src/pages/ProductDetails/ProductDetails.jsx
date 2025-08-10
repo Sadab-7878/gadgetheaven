@@ -1,20 +1,36 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router";
 import products from "../products.json";
 import Navbar from "../../components/Navbar/Navbar";
-import star from '../../assets/star.png';
-import star_rating from '../../assets/star rating.png'
+import star from "../../assets/star.png";
+import star_rating from "../../assets/star rating.png";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoMdHeartEmpty } from "react-icons/io";
-
+import { CartContext } from "../CartContext";
+import { ToastContainer, toast } from "react-toastify";
 
 const ProductDetails = () => {
   const { id } = useParams();
   const product = products.find((p) => p.id === parseInt(id));
+  const { addtocart, cartnaw } = useContext(CartContext);
+
+  const notify = () => toast.success("Successfully added to Cart!");
+  const notifyAlready = () => toast.info("Item is already in the cart!");
 
   if (!product) {
     return <p>Product not found</p>;
   }
+
+  const exists = cartnaw.find((item) => item.id === product.id);
+
+  const handleAddToCart = () => {
+    if (exists) {
+      notifyAlready();
+    } else {
+      addtocart(product);
+      notify();
+    }
+  };
 
   return (
     <>
@@ -80,11 +96,11 @@ const ProductDetails = () => {
 
           <div className="flex  items-center gap-2">
             <p className="font-[700] text-[18px] sora-text">Rating</p>
-            <img src={star} alt="star" className="w-6"/>
+            <img src={star} alt="star" className="w-6" />
           </div>
 
           <div className="flex items-center gap-5">
-            <img src={star_rating} alt="star_rating" className="w-[200px]"/>
+            <img src={star_rating} alt="star_rating" className="w-[200px]" />
 
             <div className="font-[500] text-[14px] sora-text w-14 h-10 flex justify-center items-center rounded-3xl bg-[#F8F8F8]">
               <p>{product.rating}</p>
@@ -92,12 +108,26 @@ const ProductDetails = () => {
           </div>
 
           <div className="flex items-center gap-5">
-            <button className="flex items-center gap-2 cursor-pointer font-[700] text-[20px] border w-[200px] h-[50px] justify-center rounded-3xl bg-[#9538E2] text-white sora-text">Add to Cart<AiOutlineShoppingCart size={25}/></button>
+            <button
+              onClick={handleAddToCart}
+              className={`flex items-center gap-2 cursor-pointer font-[700] text-[20px] border  h-[50px] justify-center rounded-3xl bg-[#9538E2] text-white sora-text ${
+                exists
+                  ? "bg-[#9538E2] text-white cursor-not-allowed w-[250px] hover:bg-violet-400"
+                  : "bg-[#9538E2] text-white sora-text w-[200px]"
+              }`}
+            >
+              {exists ? "Already Added" : "Add to Cart"}
+              <AiOutlineShoppingCart size={25} />
+            </button>
 
-            <button className="border-2 text-[#A6ADBB] w-[50px] h-[50px] rounded-3xl border-black flex flex-col justify-center items-center"><IoMdHeartEmpty size={30}/></button>
+            <button className="border-2 text-[#A6ADBB] w-[50px] h-[50px] rounded-3xl border-black flex flex-col justify-center items-center">
+              <IoMdHeartEmpty size={30} />
+            </button>
           </div>
         </div>
       </div>
+
+      <ToastContainer />
     </>
   );
 };
