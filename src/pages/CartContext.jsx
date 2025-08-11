@@ -24,6 +24,10 @@ const CartProvider = ({ children }) => {
     setcartnaw((prevCart) => prevCart.filter((item) => item.id !== id));
   };
 
+  const clearcart = () => {
+    setcartnaw([]);
+  };
+
   // localStorage set
 
   useEffect(() => {
@@ -31,7 +35,7 @@ const CartProvider = ({ children }) => {
   }, [cartnaw]);
 
   return (
-    <CartContext.Provider value={{ cartnaw, addtocart, removecart }}>
+    <CartContext.Provider value={{ cartnaw, addtocart, removecart, clearcart }}>
       {children}
     </CartContext.Provider>
   );

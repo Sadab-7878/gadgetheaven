@@ -1,3 +1,5 @@
+
+
 import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import banner from "../../assets/banner.jpg";
@@ -20,75 +22,89 @@ const Home = () => {
   const tabs = ["all", "smartphone", "drone", "laptop", "audio", "wearable"];
 
   return (
-    <>
-      <div className="border w-[1400px] mx-auto mt-10   h-[700px] bg-[#9538E2] rounded-2xl">
-        <Navbar />
+    <div className="bg-white">
+      {/* Hero Section */}
+      <div className="bg-[#9538E2]">
+        <div className="max-w-screen-xl mx-auto px-4 sm:px-8 py-10">
+          <Navbar />
+          <div className="text-center mt-10">
+            <h1 className="sora-text text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold text-white leading-tight">
+              Upgrade Your Tech Accessorize with{" "}
+              <br className="hidden md:block" /> Gadget Heaven Accessories
+            </h1>
+            <p className="sora-text text-sm sm:text-base md:text-lg lg:text-[20px] text-white mt-4">
+              Explore the latest gadgets that will take your experience to the
+              next level. From smart devices to the coolest accessories, we have
+              it all!
+            </p>
+            <Link to={"/cart"}>
+              <button className="font-bold sora-text text-base md:text-lg bg-white text-[#9538E2] px-6 py-3 mt-8 rounded-md">
+                Shop Now
+              </button>
+            </Link>
+          </div>
 
-        <div className="text-center">
-          <p className="sora-text text-[56px] font-[700] text-white  mt-10">
-            Upgrade Your Tech Accessorize with <br /> Gadget Heaven Accessories
-          </p>
-
-          <p className="sora-text text-[20px] font-[400] text-white">
-            Explore the latest gadgets that will take your experience to the
-            next level. From smart devices <br /> to the coolest accessories, we
-            have it all!
-          </p>
-
-          <button className="font-[700] sora-text text-[20px] bg-white text-[#9538E2] px-6 py-3 mt-10 rounded-md border border-black">
-            Shop Now
-          </button>
+          {/* Banner */}
+          <div className="max-w-4xl mx-auto mt-10 bg-gradient-to-b from-white to-[#F6F6F6] rounded-3xl p-4">
+            <img
+              src={banner}
+              alt="banner"
+              className="w-full rounded-2xl object-cover"
+            />
+          </div>
         </div>
+      </div>
 
-        <div className=" w-[1200px] h-[700px] mx-auto mt-10 bg-gradient-to-b from-white to-[#F6F6F6] rounded-4xl flex justify-center items-center">
-          <img
-            src={banner}
-            alt="banner"
-            className="w-[1100px] h-[600px] rounded-3xl"
-          />
-        </div>
+      {/* Products Section */}
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-8 py-20">
+        <h2 className="text-center text-2xl sm:text-3xl font-bold mb-10">
+          Explore Cutting-Edge Gadgets
+        </h2>
 
-        {/* products  */}
-        <div className="my-40 mx-10 flex gap-20 ">
-          {/* 1 */}
-          <div className="shadow-lg w-[350px] rounded-lg mb-10">
-            <div className="flex flex-col gap-5 justify-center items-center p-10">
+        <div className="flex flex-col lg:flex-row gap-10">
+          {/* Tabs */}
+          <div className="shadow-md w-full lg:w-[250px] rounded-lg bg-white p-6">
+            <div className="flex flex-wrap lg:flex-col gap-4">
               {tabs.map((tab) => (
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className="cursor-pointer  w-64 h-14 rounded-lg bg-[#F6F6F6] sora-text font-[500] text-[18px]"
+                  className={`cursor-pointer w-full h-12 rounded-lg sora-text font-medium text-lg capitalize ${
+                    activeTab === tab
+                      ? "bg-[#9538E2] text-white"
+                      : "bg-[#F6F6F6] text-black"
+                  }`}
                 >
-                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                  {tab}
                 </button>
               ))}
             </div>
           </div>
 
-          {/* 2 */}
-          <div className="grid grid-cols-3 gap-20 mb-10">
+          {/* Products Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 flex-1">
             {filteredProducts.map((product) => (
               <div
-                className="shadow-lg w-[300px] h-[400px] rounded-2xl flex flex-col p-5 gap-5"
+                className="shadow-md rounded-2xl flex flex-col p-5 gap-5 bg-white"
                 key={product.id}
               >
                 <div className="w-full flex justify-center">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-[300px] h-[130px] rounded-2xl"
+                    className="w-full h-[130px] rounded-2xl object-contain"
                   />
                 </div>
 
-                <div className="font-[600] text-[24px] sora-text min-h-[64px]">
+                <div className="font-semibold text-lg md:text-xl sora-text min-h-[64px]">
                   {product.name}
                 </div>
-                <div className="font-[500] text-[16px] sora-text text-[#6B6B6E]">
+                <div className="font-medium text-sm md:text-base sora-text text-[#6B6B6E]">
                   Price: {product.price}
                 </div>
 
                 <Link to={`/product/${product.id}`} className="mt-auto">
-                  <button className="border border-[#9538E2] w-[170px] h-[50px] rounded-lg text-[#9538E2] font-[600] text-[18px] sora-text hover:bg-[#F6F6F6] hover:border-none cursor-pointer">
+                  <button className="border border-[#9538E2] w-full h-[45px] rounded-lg text-[#9538E2] font-semibold text-base sora-text hover:bg-[#F6F6F6]">
                     View Details
                   </button>
                 </Link>
@@ -96,10 +112,11 @@ const Home = () => {
             ))}
           </div>
         </div>
-
-        <Footer />
       </div>
-    </>
+
+      {/* Footer */}
+      <Footer />
+    </div>
   );
 };
 
