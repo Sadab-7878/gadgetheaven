@@ -38,7 +38,7 @@ const Home = () => {
               it all!
             </p>
             <Link to={"/cart"}>
-              <button className="font-bold sora-text text-base md:text-lg bg-white text-[#9538E2] px-6 py-3 mt-8 rounded-md">
+              <button className="font-bold sora-text text-base md:text-lg bg-white text-[#9538E2] px-6 py-3 mt-8 rounded-md cursor-pointer">
                 Shop Now
               </button>
             </Link>
